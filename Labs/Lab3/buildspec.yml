@@ -7,9 +7,9 @@ environment_variables:
 phases:
   install:
     runtime-versions:
-      docker: 23
+      docker: 18
     commands:
-      - cd ${CODEBUILD_SRC_DIR}/Labs/Lab3/
+      - cd /tmp
       - git submodule init
       - git submodule update --recursive
       - wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz
